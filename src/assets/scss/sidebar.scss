@@ -1,0 +1,175 @@
+.sidebar-menu{
+ .sidebar-menu-item.active{
+  &.sales{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/sales-active.svg');
+      }
+    }
+  }
+  &.orders{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/orders-active.svg');
+      }
+    }
+  }
+  &.returns{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/returns-active.svg');
+      }
+    }
+  }
+  &.collections{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/collections-active.svg');
+      }
+    }
+  }
+  &.picking{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/picking-active.svg');
+      }
+    }
+  }
+ }
+ 
+ .sidebar-menu-item{
+   &.dashboard{
+     > a{
+       &:before{
+         background-image: url('/static/images/icons/dashboard.svg');
+       }
+       &:hover{
+        &:before{
+          background-image: url('/static/images/icons/dashboard-active.svg');
+        }        
+      }
+     }
+   }
+   &.orders{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/orders.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/orders-active.svg');
+        }        
+      }
+    }
+  }
+  &.stocktake{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/stocktake.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/stocktake-active.svg');
+        }        
+      }
+    }
+  }
+  &.sales{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/sales.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/sales-active.svg');
+        }        
+      }
+    }
+  }
+  &.returns{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/returns.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/returns-active.svg');
+        }        
+      }
+    }
+  }
+  &.collections{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/collections.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/collections-active.svg');
+        }        
+      }
+    }
+  }
+  &.picking{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/picking.svg');
+      }
+      &:hover{
+        &:before{
+          background-image: url('/static/images/icons/picking-active.svg');
+        }        
+      }
+    }
+  }
+  &.reports-and-feedback{
+    > a{
+      &:before{
+        background-image: url('/static/images/icons/reports.svg');
+      }
+    }
+  }
+  &.active{
+    > a{
+      background: #F6F7F9;
+      color: $primary;
+      &:after{
+        content: '';
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        background: $primary;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+      }
+    }
+  }
+   > a{
+    &:hover{
+      background: #F6F7F9;
+      color: $primary;
+      &:after{
+        content: '';
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        background: $primary;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+      }
+    }
+    position: relative;
+    &:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+   }
+ } 
+}

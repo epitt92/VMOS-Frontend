@@ -1,0 +1,57 @@
+$primary: #657ACB;
+$secondary: #E0E6ED;
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #657ACB !important;
+}
+
+::selection {
+  color: #fff;
+  background: #657ACB !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'sidebar';
+
+body{
+  font-family: "OpenSans Semibold";
+  font-size: 0.875rem;
+  background: #fbfbfb;
+}
+
+a{
+  text-decoration: none;
+}
+
+b{
+  font-family: 'OpenSans Bold';
+}
+
+p{
+  font-family: 'OpenSans';
+}
+
+.text-read{
+  color:#8492A5;
+}
+
+.table-light {
+  --bs-table-bg: #EBEFF5;
+  --bs-table-striped-bg: #ecedee;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #dfe0e1;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
